@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Morion */
+@font-face {
+    font-family: 'Morion';
+    src: url('../../assets/fonts/Morion-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Morion-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Questa Sans */
+@font-face {
+    font-family: 'Questa Sans';
+    src: url('../../assets/fonts/QuestaSans-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/QuestaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Base styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-secondary;
+}
+
+p,
+a {
+    @apply font-primary;
+}
+
+/* Accordion */
+.accordion {
+    button[aria-expanded='true'] {
+        + .accordion-content {
+            opacity: 1;
+            max-height: min-content;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+    }
+    .accordion-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+    }
+}
