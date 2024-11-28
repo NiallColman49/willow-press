@@ -480,6 +480,91 @@
             </div>
         </section>
 
+        <section class="pt-10 pb-20 form-section relative">
+            <img
+                src="./assets/images/left-horizontal-leaves.svg"
+                alt="Left Leaves"
+                class="absolute left-0 top-4 sm:top-0 w-[320px] lg:w-[500px] -z-[1]"
+            />
+
+            <img
+                src="./assets/images/right-horizontal-leaves.svg"
+                alt="Left Leaves"
+                class="absolute right-0 bottom-40 w-[380px] lg:w-[560px] -z-[1] pl-4"
+            />
+
+            <div class="container">
+                <div class="flex flex-col items-center lg:w-1/2 lg:mx-auto">
+                    <div class="w-full justify-end">
+                        <h2
+                            class="text-dark-green text-right text-2xl md:text-[34px] leading-[1.1] lg:leading-[1.2] pb-10 lg:pb-16"
+                        >
+                            Enquire now
+                        </h2>
+                    </div>
+
+                    <div class="w-full">
+                        <form
+                            action="https://formspree.io/f/xqakyjwn"
+                            method="POST"
+                            class="custom-form"
+                        >
+                            <div
+                                class="form-row font-primary col-span-2 sm:col-span-1"
+                            >
+                                <label for="first-name">First name *</label>
+                                <input
+                                    type="text"
+                                    id="first-name"
+                                    name="first-name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-row col-span-2 sm:col-span-1">
+                                <label for="last-name">Last name *</label>
+                                <input
+                                    type="text"
+                                    id="last-name"
+                                    name="last-name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-row col-span-2 sm:col-span-1">
+                                <label for="phone-number">Phone number *</label>
+                                <input
+                                    type="tel"
+                                    id="phone-number"
+                                    name="phone-number"
+                                    required
+                                />
+                            </div>
+                            <div class="form-row col-span-2 sm:col-span-1">
+                                <label for="email">Email address *</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-row full-width">
+                                <label for="enquiry">Nature of enquiry *</label>
+                                <textarea
+                                    id="enquiry"
+                                    name="enquiry"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div class="form-row full-width">
+                                <p>*Mandatory fields</p>
+                            </div>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer class="py-10">
             <div class="container">
                 <div

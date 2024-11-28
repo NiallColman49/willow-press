@@ -55,3 +55,72 @@ a {
         will-change: opacity, max-height;
     }
 }
+
+/* Form */
+.form-section {
+    .custom-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row.full-width {
+        grid-column: span 2;
+    }
+
+    .form-row.half-width {
+        grid-column: span 1;
+    }
+
+    label {
+        font-family: Questa Sans, sans-serif;
+        margin-bottom: 8px;
+        color: #08201e;
+    }
+
+    input,
+    textarea {
+        font-family: Questa Sans, sans-serif;
+        border: none;
+        border-bottom: 1px solid #08201e;
+        padding: 8px 8px 8px 0;
+        outline: none;
+        background: transparent;
+    }
+
+    textarea {
+        font-family: Questa Sans, sans-serif;
+        resize: none;
+        height: 100px;
+    }
+
+    button {
+        font-family: Morion, serif;
+        font-size: 18px;
+        grid-column: span 2;
+        padding: 10px 20px;
+        background-color: #08201e;
+        color: #dae2cc;
+        border: none;
+        cursor: pointer;
+        grid-column: span 1;
+        grid-column-start: 2;
+        border-radius: 99999px;
+    }
+
+    button:hover {
+        background-color: #39524f;
+    }
+
+    p {
+        font-family: Questa Sans, sans-serif;
+        margin-top: 8px;
+    }
+}
