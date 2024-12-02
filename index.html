@@ -4,7 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Willow Press</title>
+        <!-- Tailwind -->
         <link href="./src/css/output.css" rel="stylesheet" />
+        <!-- SwiperJS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
     </head>
     <body class="bg-light-green">
         <!-- Navigation -->
@@ -130,7 +136,7 @@
         </section>
 
         <!-- About text Section -->
-        <section class="pt-10 md:pt-12 lg:pt-20" id="#about">
+        <section class="pt-10 md:pt-12 lg:pt-20" id="about">
             <div class="container">
                 <div
                     class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-12 justify-center"
@@ -151,24 +157,25 @@
                         <h2
                             class="text-2xl md:text-[34px] text-dark-green leading-[1.1] lg:leading-[1.2]"
                         >
-                            Small company, producing big time results.
+                            Just a little bit about us
                         </h2>
 
                         <p class="text-dark-green lg:text-lg pt-6 md:pt-8">
-                            Whether it's eye-catching wall displays, dynamic
-                            window visuals, or custom signage, our graphics can
-                            captivate your audience and enhance the customer
-                            experience.
+                            We are a small family run business, that take pride
+                            in producing top quality work. Our customer service
+                            is what sets us apart, and we would love to help you
+                            where we can.
                             <br /><br />
-                            By investing in premium visuals, you can elevate
-                            your business and strengthen brand recognition.
+                            For all your printing needs, don't hesitate to get
+                            in touch with us. We're always happy to offer advice
+                            and assistance!
                         </p>
 
                         <a
-                            href="/"
+                            href="#contact"
                             target="_self"
                             class="block text-dark-green underline mt-6 md:mt-8 text-xl font-primary"
-                            >Lorem ipsum dolor sit
+                            >Get in touch now
                         </a>
                     </div>
                 </div>
@@ -203,28 +210,75 @@
         </section>
 
         <!-- Full width gallery -->
-        <section class="mt-12 sm:mt-20 lg:mt-40" id="#gallery">
-            <div
-                class="w-full lg:max-h-[640px] xl:max-h-[740px] overflow-hidden relative"
-            >
-                <img
-                    src="./assets/images/hero-image-4.jpeg"
-                    alt="Hero Image 4"
-                    class="w-full h-full object-center object-cover"
-                />
-
-                <span
-                    class="block absolute bottom-4 md:bottom-10 left-4 md:left-10 text-darkest-green underline text-xl font-primary"
-                >
-                    Interior wall graphics
-                </span>
+        <section class="mt-12 sm:mt-20 lg:mt-40" id="gallery">
+            <div class="swiper mySwiper max-h-[740px]">
+                <div class="swiper-wrapper max-h-[740px]">
+                    <div class="swiper-slide relative max-h-[740px]">
+                        <img
+                            src="./assets/images/interior-graphics.jpg"
+                            alt="Interior graphics"
+                        />
+                        <span
+                            class="absolute bottom-4 md:bottom-10 right-4 md:right-10 block text-darkest-green underline lg:text-xl font-primary z-10"
+                        >
+                            Interior graphics</span
+                        >
+                    </div>
+                    <div class="swiper-slide max-h-[740px]">
+                        <img
+                            src="./assets/images/hoardings.png"
+                            alt="Hoardings"
+                        />
+                        <span
+                            class="absolute bottom-4 md:bottom-10 right-4 md:right-10 block text-light-green underline lg:text-xl font-primary z-10"
+                        >
+                            Hoardings</span
+                        >
+                    </div>
+                    <div class="swiper-slide max-h-[740px]">
+                        <img
+                            src="./assets/images/floor-graphics.jpeg"
+                            alt="Floor graphics"
+                        />
+                        <span
+                            class="absolute bottom-4 md:bottom-10 right-4 md:right-10 block text-light-green underline lg:text-xl font-primary z-10"
+                        >
+                            Floor graphics</span
+                        >
+                    </div>
+                    <div class="swiper-slide max-h-[740px]">
+                        <img
+                            src="./assets/images/vehicle-graphics.jpg"
+                            alt="Vehicle graphics"
+                        />
+                        <span
+                            class="absolute bottom-4 md:bottom-10 right-4 md:right-10 block text-darkest-green underline lg:text-xl font-primary z-10"
+                        >
+                            Vehicle graphics</span
+                        >
+                    </div>
+                    <div class="swiper-slide max-h-[740px]">
+                        <img
+                            src="./assets/images/external-graphics.png"
+                            alt="External graphics"
+                        />
+                        <span
+                            class="absolute bottom-4 md:bottom-10 right-4 md:right-10 block text-light-green underline lg:text-xl font-primary z-10"
+                        >
+                            External graphics</span
+                        >
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
         <!-- Your ideas section -->
         <section
             class="bg-darkest-green py-10 md:py-12 lg:py-20 relative"
-            id="#services"
+            id="services"
         >
             <div class="container">
                 <div
@@ -257,6 +311,7 @@
 
         <section
             class="bg-darkest-green pt-2 md:pt-6 lg:pt-10 pb-10 md:pb-12 lg:pb-20"
+            id="info"
         >
             <div class="container">
                 <div
@@ -282,10 +337,10 @@
                         </p>
 
                         <a
-                            href="/"
+                            href="#contact"
                             target="_self"
                             class="block text-light-green underline mt-6 md:mt-8 text-xl font-primary"
-                            >Lorem ipsum dolor sit
+                            >Get in touch now
                         </a>
                     </div>
 
@@ -293,7 +348,7 @@
                         class="col-span-3 md:col-span-6 lg:col-span-5 lg:col-start-7 lg:h-[580px] overflow-hidden pt-10 md:pt-12 lg:pt-0"
                     >
                         <img
-                            src="./assets/images/hero-image-2.jpeg"
+                            src="./assets/images/fabric-image.png"
                             alt="Hero Image 2"
                             class="w-full h-full scale-x-150"
                         />
@@ -305,7 +360,7 @@
                 <div class="container">
                     <div class="w-5/12 h-[460px] overflow-hidden -mt-20">
                         <img
-                            src="./assets/images/hero-image-2.jpeg"
+                            src="./assets/images/internal-graphics.png"
                             alt="Hero Image 4"
                             class="w-full h-full object-cover object-center"
                         />
@@ -314,7 +369,7 @@
             </div>
         </section>
 
-        <section class="pt-10 mg:pt-12 lg:pt-20 bg-light-green">
+        <section class="pt-10 mg:pt-12 lg:pt-20 bg-light-green" id="faqs">
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full lg:w-7/12">
@@ -343,12 +398,12 @@
                                     <p
                                         class="text-lg pl-[76px] lg:pl-[152px] pt-4 lg:pt-6 pr-8 text-dark-green"
                                     >
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Elementum sagittis vitae et leo
-                                        duis ut. Ut tortor pretium viverra
-                                        suspendisse potenti.
+                                        Interior graphics play a crucial role in
+                                        attracting customers, conveying
+                                        information, and creating a visually
+                                        appealing environment. We offer a whole
+                                        range of interior products, from POS to
+                                        posters.
                                     </p>
                                 </div>
                             </div>
@@ -377,12 +432,10 @@
                                     <p
                                         class="text-lg pl-[76px] lg:pl-[152px] pt-4 lg:pt-6 pr-8 text-dark-green"
                                     >
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Elementum sagittis vitae et leo
-                                        duis ut. Ut tortor pretium viverra
-                                        suspendisse potenti.
+                                        Our external graphic products are hard
+                                        wearing and designed to last. From
+                                        hoardings to banners, we have got you
+                                        covered.
                                     </p>
                                 </div>
                             </div>
@@ -411,12 +464,12 @@
                                     <p
                                         class="text-lg pl-[76px] lg:pl-[152px] pt-4 lg:pt-6 pr-8 text-dark-green"
                                     >
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Elementum sagittis vitae et leo
-                                        duis ut. Ut tortor pretium viverra
-                                        suspendisse potenti.
+                                        We can print as large as you can
+                                        imagine. Perfect for businesses looking
+                                        to enhance branding or promotional
+                                        efforts, large format print combines
+                                        quality with scalability, making it a
+                                        powerful marketing tool.
                                     </p>
                                 </div>
                             </div>
@@ -445,12 +498,13 @@
                                     <p
                                         class="text-lg pl-[76px] lg:pl-[152px] pt-4 lg:pt-6 pr-8 text-dark-green"
                                     >
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Elementum sagittis vitae et leo
-                                        duis ut. Ut tortor pretium viverra
-                                        suspendisse potenti.
+                                        From storefront signs to interior
+                                        wayfinding, effective signage combines
+                                        eye-catching design with durability to
+                                        ensure maximum impact. Signage helps
+                                        convey important messages, and reinforce
+                                        brand identity, making it an essential
+                                        investment for any business.
                                     </p>
                                 </div>
                             </div>
@@ -502,14 +556,15 @@
                         <h3
                             class="block font-secondary text-dark-green text-lg"
                         >
-                            Name
+                            Highly Recommend
                         </h3>
-                        <p>
-                            Lorem ipsum yowsf wdfw wf wf fw fwwf wcf wfwfwffw
-                            ffwfw wfwfw qqsq sqssq
+                        <p class="pt-1">
+                            "Fantastic service! The posters we ordered were of
+                            exceptional quality, delivered on time, and exceeded
+                            our expectations."
                         </p>
                         <span class="text-dark-green font-secondary pt-4"
-                            >Author</span
+                            >Mark Birtwell</span
                         >
                     </div>
 
@@ -527,14 +582,15 @@
                         <h3
                             class="block font-secondary text-dark-green text-lg"
                         >
-                            Name
+                            Great Quality
                         </h3>
-                        <p>
-                            Lorem ipsum yowsf wdfw wf wf fw fwwf wcf wfwfwffw
-                            ffwfw wfwfw qqsq sqssq
+                        <p class="pt-1">
+                            "Outstanding hoardings! The print quality was
+                            vibrant and sharp, with durable materials. Delivered
+                            promptly and installed perfectly."
                         </p>
                         <span class="text-dark-green font-secondary pt-4"
-                            >Author</span
+                            >Richard lewis</span
                         >
                     </div>
 
@@ -552,14 +608,15 @@
                         <h3
                             class="block font-secondary text-dark-green text-lg"
                         >
-                            Name
+                            Transformation
                         </h3>
-                        <p>
-                            Lorem ipsum yowsf wdfw wf wf fw fwwf wcf wfwfwffw
-                            ffwfw wfwfw qqsq sqssq
+                        <p class="pt-1">
+                            My van now looks ace! Great service, quick
+                            turnaround, and top-notch quality! I have had so
+                            many extra enquiries since.
                         </p>
-                        <span class="text-dark-green font-secondary pt-4"
-                            >Author</span
+                        <span class="block text-dark-green font-secondary pt-4"
+                            >James Penrose</span
                         >
                     </div>
                 </div>
@@ -567,7 +624,7 @@
         </section>
 
         <!-- Form section -->
-        <section class="pt-10 pb-20 form-section relative">
+        <section class="pt-10 pb-20 form-section relative" id="contact">
             <img
                 src="./assets/images/left-horizontal-leaves.svg"
                 alt="Left Leaves"
@@ -716,7 +773,7 @@
                         </a>
 
                         <a
-                            href="https://instagram.com
+                            href="https://www.instagram.com/willowpressprints
 "
                             target="_blank"
                             class="text-darkest-green text-lg hover:underline"
@@ -729,5 +786,8 @@
 
         <!-- FAQs -->
         <script src="./src/js/faqs.js" defer></script>
+        <!-- SwiperJS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./src/js/slider.js" defer></script>
     </body>
 </html>
